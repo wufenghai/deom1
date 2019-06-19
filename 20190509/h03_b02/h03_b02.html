@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>调查问卷</title>
+</head>
+
+<body>
+    <h2>American Metric 电子产品调查表</h2>
+    <form action="#" method="POST">
+        <p>
+            <label id="name">
+                姓名：
+                <input type="text" size="30" id="name" pattern="[\dA-Za-z]{2,6}" placeholder="输入必须是2-6位字符" />
+            </label>
+        </p>
+        <p>
+            <label id="year">
+                购买日期：
+                <input type="text" size="5" id="year">年
+            </label>
+            <label id="month">
+                <select>
+                    <option selected>1月</option>
+                    <option>2月</option>
+                </select>月
+            </label>
+            <label id="day">
+                <select>
+                    <option selected>1</option>
+                    <option>2</option>
+                </select>日
+            </label>
+        </p>
+        <p>
+            <label id="email">
+                电子邮箱地址：
+                <input type="email" id="email" size="30" placeholder="www.baidu.com" />
+            </label>
+        </p>
+        <p>
+            <label id="phone">
+                手机号码：
+                <input type="text" id="phone" size="30" placeholder="输入必须是以13/15/18开头的11位数字" pattern="1[358]\d{9}" />
+            </label>
+        </p>
+        <p>
+            您是否查看过我们的在线产品目录？
+            <label id="yes">
+                <input type="radio" id="yes" name="before" checked>是
+            </label>
+            <label id="no">
+                <input type="radio" id="no" name="before">否
+            </label>
+        </p>
+        <p>
+            如果查看过，您对哪些产品有兴趣购买？(选择提供的产品)
+            <br />
+            <label id="TV">
+                <input type="checkbox" id="TV" name="product" />大屏幕电视机
+            </label>
+            <label id="audio">
+                <input type="checkbox" id="audio" name="product" />音频设备
+            </label>
+            <label id="vedio">
+                <input type="checkbox" id="vedio" name="roduct" />视频设备
+            </label>
+            <label id="camera">
+                <input type="checkbox" id="camera" name="product" />相机
+            </label>
+        </p>
+        <p>
+            <label id="advise">
+                在填写订单之前，您还有什么问题、意见或建议？<br />
+                <textarea id="advise" name="" rows="5" cols="50">您的输入：
+               </textarea>
+            </label>
+        </p>
+        <p>
+            <input type="submit" style="height: 25px;width: 60px;"/>
+            <input type="reset" style="height: 25px;width: 60px;"/>
+        </p>
+    </form>
+</body>
+
+</html>
